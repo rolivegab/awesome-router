@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+      ],
+      "extends": [
+        "airbnb",
+        "plugin:import/typescript"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": [
+        "@typescript-eslint"
+      ],
+      "env": {
+        "browser": true
+      },
+      "rules": {
+        "react/jsx-filename-extension": [
+          1,
+          {
+            "extensions": [
+              ".tsx"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
