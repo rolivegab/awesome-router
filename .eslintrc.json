@@ -14,8 +14,12 @@
       "plugins": [
         "@typescript-eslint"
       ],
+      "settings": {
+        "project": "./tsconfig.json"
+      },
       "env": {
-        "browser": true
+        "browser": true,
+        "jest": true
       },
       "rules": {
         "react/jsx-filename-extension": [
@@ -25,7 +29,10 @@
               ".tsx"
             ]
           }
-        ]
+        ],
+        "import/no-extraneous-dependencies": "off",
+        "jsx-a11y/control-has-associated-label": "off",
+        "react/button-has-type": "off"
       }
     }
   ]
